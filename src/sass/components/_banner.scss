@@ -1,0 +1,117 @@
+.banner {
+    z-index: 100;
+    position: relative;
+    
+    .banner-row {
+        // overflow: hidden;
+        display: flex;
+        align-items: center;
+        
+        
+        &.center {
+            justify-content: center;
+            text-align: center;
+            .row-letter {
+                left: 0;
+            }
+        }
+    
+        &.right {
+            justify-content: flex-end;
+        }
+        .row-title, 
+        .row-letter {
+            font-family: $font-header;
+            font-size: 22rem;
+            font-weight: 500;
+            position: relative;
+            letter-spacing: -0.8rem;
+            display: inline-block;
+            white-space: nowrap;
+        }
+        .row-col {
+            width: 50%;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            
+
+            
+            .row-message {
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                width: 320px;
+            }
+        }
+        .scroll {
+            height: 160px;
+            width: 160px;
+            border-radius: 100%;
+            background: $white;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            left: 80px;
+    
+            span {
+                font-size: 18px;
+                font-weight: 600;
+                margin: 4px 0;
+            }
+        }
+    }
+    
+}
+
+.transition-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 600px;
+        display: flex;
+    }
+    &.final {
+        display: block;
+        top: -128px;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        z-index: -100;
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    
+}
+
+.decorated {
+        color: $font-color;
+        text-shadow:  $a $b $background-letter,
+                $a+$c*1 $b $font-color,
+                $a+$c*2 $b $background-letter,
+                $a+$c*3 $b lighten($font-color, 5%),
+                $a+$c*4 $b $background-letter,
+                $a+$c*5 $b lighten($font-color, 10%),
+                $a+$c*6 $b $background-letter,
+                $a+$c*7 $b lighten($font-color, 10%),
+                $a+$c*8 $b $background-letter,
+                $a+$c*9 $b lighten($layer, 10%),
+                $a+$c*10 $b $background-letter,
+                $a+$c*11 $b lighten($layer, 10%),
+                $a+$c*12 $b $background-letter,
+                $a+$c*13 $b lighten($layer, 5%),
+                $a+$c*14 $b $background-letter,
+                $a+$c*15 $b $layer,
+                $a+$c*16 $b $background-letter,
+                $a+$c*17 $b $layer      
+}
