@@ -11,7 +11,7 @@ import Banner from './components/Banner'
 import Loader from './components/Loader'
 import About from './components/About';
 
-import Gallery from './pages/Gallery/Gallery';
+// import Gallery from './pages/Gallery/Gallery';
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -50,10 +50,9 @@ function App() {
                <About />
 
               </div>
+              {/* <Gallery/> */}
 
-                {/* <Switch>
-                  <Route exact to="/gallery" component={Gallery} />
-                </Switch> */}
+
               </>
           )}
         </AnimatePresence>
